@@ -18,6 +18,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "format": "prettier --write .",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +43,8 @@
     "transformIgnorePatterns": [
       "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
