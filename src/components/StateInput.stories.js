@@ -2,12 +2,7 @@ import React from 'react';
 
 import StateInput from './StateInput';
 
-export default {
-  component: StateInput,
-  title: 'State Input',
-};
-
-const Template = args => <StateInput {...args} />;
+const Template = (args) => <StateInput {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
@@ -38,3 +33,10 @@ Typing.args = {
   ...Default.args,
   state: 'TYPING',
 };
+
+const StateInputStory = {
+  component: StateInput,
+  title: 'State Input',
+};
+
+export default StateInputStory;
